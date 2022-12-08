@@ -42,6 +42,7 @@ $textBoxName = New-Object System.Windows.Forms.TextBox
 $textBoxName.Location = New-Object System.Drawing.Point(120,17)
 $textBoxName.Size = New-Object System.Drawing.Size(260,20)
 $textBoxName.Text = 'Enter your name here'
+$textBoxName.ShortcutsEnabled = $true
 $textBoxName.ForeColor = 'Gray'
 $textBoxName.Add_GotFocus({
   if ($textBoxName.Text -eq 'Enter your name here') {
@@ -68,6 +69,7 @@ $textBoxRecipeName = New-Object System.Windows.Forms.TextBox
 $textBoxRecipeName.Location = New-Object System.Drawing.Point(120,57)
 $textBoxRecipeName.Size = New-Object System.Drawing.Size(260,20)
 $textBoxRecipeName.Text = 'Enter the name for the recipe here'
+$textBoxRecipeName.ShortcutsEnabled = $true
 $textBoxRecipeName.ForeColor = 'Gray'
 $textBoxRecipeName.Add_GotFocus({
   if ($textBoxRecipeName.Text -eq 'Enter the name for the recipe here') {
@@ -128,6 +130,7 @@ $textBoxIngredients = New-Object System.Windows.Forms.TextBox
 $textBoxIngredients.MultiLine = $true
 $textBoxIngredients.AcceptsReturn = $true
 $textBoxIngredients.Scrollbars = 3
+$textBoxIngredients.ShortcutsEnabled = $true
 $textBoxIngredients.Location = New-Object System.Drawing.Point(120,137)
 $textBoxIngredients.Size = New-Object System.Drawing.Size(360,100)
 $textBoxIngredients.Text = 'Enter the ingredients for the recipe here. Example:
@@ -165,6 +168,7 @@ $textBoxInstructions = New-Object System.Windows.Forms.TextBox
 $textBoxInstructions.MultiLine = $true
 $textBoxInstructions.AcceptsReturn = $true
 $textBoxInstructions.Scrollbars = 3
+$textBoxInstructions.ShortcutsEnabled = $true
 $textBoxInstructions.Location = New-Object System.Drawing.Point(120,257)
 $textBoxInstructions.Size = New-Object System.Drawing.Size(360,100)
 $textBoxInstructions.Text = 'Enter the instructions for the recipe here. Example:
@@ -199,6 +203,7 @@ $textBoxNotes = New-Object System.Windows.Forms.TextBox
 $textBoxNotes.MultiLine = $true
 $textBoxNotes.AcceptsReturn = $true
 $textBoxNotes.Scrollbars = 3
+$textBoxNotes.ShortcutsEnabled = $true
 $textBoxNotes.Location = New-Object System.Drawing.Point(120,377)
 $textBoxNotes.Size = New-Object System.Drawing.Size(360,100)
 $textBoxNotes.Text = 'Enter any notes or comments about the recipe here.'
